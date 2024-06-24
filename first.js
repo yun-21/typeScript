@@ -1,1 +1,1 @@
-console.log(".ts에 작성하고 ts 동일파일명.js");
+console.log(".ts에 작성하고 tsc 파일명.ts");
