@@ -62,8 +62,7 @@ const items2 : Item2[] = [
     { name: "주스", price: 1500 },
 ];
 
-//모든 상품의 이름을 배열로 생성하세요.
-const availableitems = items2.filter((item)=>{
+const seven = items2.filter((item)=>{
     return item.price>=1000;
 });
-console.log(availableitems)
+console.log(seven)
