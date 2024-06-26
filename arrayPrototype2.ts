@@ -47,3 +47,23 @@ const six = items.map((item)=>{
     return item.name;
 });
 console.log(six)
+
+//? 문제 7 : 특정 가격 이상의 상품 필터링
+//자판기 애플리케이션에서 가격이 1000원 이상인 상품만을 필터링해야 합니다.
+//어떤 배열 메서드를 사용해야 할까요?
+interface Item2{
+    name:string;
+    price:number;
+}
+const items2 : Item2[] = [
+    { name: "콜라", price: 1000 },
+    { name: "사이다", price: 1200 },
+    { name: "물", price: 800 },
+    { name: "주스", price: 1500 },
+];
+
+//모든 상품의 이름을 배열로 생성하세요.
+const availableitems = items2.filter((item)=>{
+    return item.price>=1000;
+});
+console.log(availableitems)
