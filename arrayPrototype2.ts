@@ -37,3 +37,13 @@ const five = items.reduce((total,item)=>{
     return total + item.stock
 },0);
 console.log(five)
+
+//? 문제 6 : 상품 이름 리스트 생성
+//자판기 애플리케이션에서 모든 상품의 이름을 배열로 생성해야 합니다.
+//어떤 배열 메서드를 사용해야 할까요?
+
+//모든 상품의 이름을 배열로 생성하세요.
+const six = items.map((item)=>{
+    return item.name;
+});
+console.log(six)
