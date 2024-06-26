@@ -98,3 +98,18 @@ const nine = items.every((item)=>{
 });
 console.log(nine)
 
+//? 문제 10 : 상품 이름과 가격으로 객체 생성
+//자판기 애플리케이션에서 모든 상품의 이름과 가격을 키-값 쌍으로 가지는 객체를 생성해야 합니다.
+//어떤 배열 메서드를 사용해야 할까요?
+interface Item2{
+    name:string;
+    price:number;
+}
+
+//이름과 가격을 키-값 쌍으로 가지는 객체를 생성하세요
+const ten = items2.reduce((obj,item)=>{
+    obj[item.name]=item.price;
+    return obj;
+},{});
+//객체 초기화를 시켜줘야한다.
+console.log(ten)
