@@ -62,7 +62,39 @@ const items2 : Item2[] = [
     { name: "주스", price: 1500 },
 ];
 
+//가격이 1000원 이상인 상품만 나열하도록 수정하세요
 const seven = items2.filter((item)=>{
     return item.price>=1000;
 });
 console.log(seven)
+
+//? 문제 8 : 상품 재고 유무 체크
+//자판기 애플리케이션에서 재고가 하나라도 있는지 확인해야 합니다.
+//어떤 배열 메서드를 사용해야 할까요?
+const items8 : Item[] = [
+    {name:"콜라", stock:5},
+    {name:"사이다", stock:0},
+    {name:"물", stock:10},
+    {name:"주스", stock:0}
+];
+
+//재고가 하나라도 있는지 확인하세요.
+const eight = items8.some((item)=>{
+    return item.stock>=0;
+});
+console.log(eight)
+
+//? 문제 9 : 모든 상품의 재고 확인
+//자판기 애플리케이션에서 모든 상품의 재고가 있는지 확인해야 합니다.
+//어떤 배열 메서드를 사용해야 할까요?
+interface Item{
+    name:string;
+    stock:number;
+}
+
+//모든 상품의 재고가 있는지 확인하세요.
+const nine = items.every((item)=>{
+    return item.stock>0;
+});
+console.log(nine)
+
