@@ -17,3 +17,13 @@ const three = items.sort((a,b)=>{
     return b.stock-a.stock;
 })
 console.log(three)
+
+//? 문제 4 : 특정상품
+//자판기 애플리케이션에서 특정 이름의 상품을 찾아야 합니다. 어떤 배열 메서드를 사용해야 할까요?
+//어떤 배열 메서드를 사용해야 할까요?
+
+//이름이 "사이다"인 상품을 찾으세요.
+const four = items.find((item)=>{
+    return item.name === '사이다'; 
+});
+console.log(four)
