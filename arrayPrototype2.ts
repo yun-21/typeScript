@@ -27,3 +27,13 @@ const four = items.find((item)=>{
     return item.name === '사이다'; 
 });
 console.log(four)
+
+//? 문제 5 : 모든 상품의 총 재고 계산
+//자판기 애플리케이션에서 모든 상품의 총 재고를 계산해야 합니다.
+//어떤 배열 메서드를 사용해야 할까요?
+
+//모든 상품의 총 재고를 계산하세요.
+const five = items.reduce((total,item)=>{
+    return total + item.stock
+},0);
+console.log(five)
