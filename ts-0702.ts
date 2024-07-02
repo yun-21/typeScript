@@ -1,4 +1,4 @@
-function a(a,b){
+function add(a:number,b:number): number{
   let result = a +b;
   return result;
 }
